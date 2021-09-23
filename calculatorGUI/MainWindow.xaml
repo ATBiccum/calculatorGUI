@@ -5,13 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:calculatorGUI"
         mc:Ignorable="d"
-        Title="Calculator" Height="600" Width="300">
+        Title="Calculator" Height="600" Width="350">
     <Grid>
-        <Button Content="Button" Margin="208,493,10,10"/>
-        <Button Content="Button" Margin="208,407,10,96"/>
-        <Button Content="Button" Margin="208,321,10,182"/>
-        <Button Content="Button" Margin="208,235,10,268"/>
-        <Button Content="Button" Margin="208,149,10,354"/>
+        <Button Content="Button" Margin="258,493,10,10" Click="Button_Click_4"/>
+        <Button Content="Button" Margin="258,407,10,96" Click="Button_Click_3"/>
+        <Button Content="-" Margin="258,321,10,182" Click="Button_Click_2"/>
+        <Button Content="*" Margin="258,235,10,268" Click="Button_Click_1" FontSize="48"/>
+        <Button Content="/" Margin="258,149,10,354" Click="Button_Click" FontSize="48"/>
+        <TextBox Text="TextBox" TextWrapping="Wrap" Margin="10,20,10,452" FontSize="72" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
 
     </Grid>
 </Window>
