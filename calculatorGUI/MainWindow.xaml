@@ -7,14 +7,14 @@
         mc:Ignorable="d"
         Title="Calculator" Height="600" Width="350">
     <Grid>
-        <Button x:Name="equals" Content="=" Margin="258,493,10,10" Click="Button_Click_4" FontSize="48" VerticalContentAlignment="Stretch"/>
-        <Button x:Name="addition" Content="+" Margin="258,407,10,96" Click="Button_Click_3" FontSize="48" VerticalContentAlignment="Stretch"/>
-        <Button x:Name="subtraction" Content="-" Margin="258,321,10,182" Click="Button_Click_2" FontSize="48" VerticalContentAlignment="Stretch"/>
-        <Button x:Name="multiplication" Content="*" Margin="258,235,10,268" Click="Button_Click_1" FontSize="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom"/>
-        <Button x:Name="divide" Content="/" Margin="258,149,10,354" Click="Button_Click" FontSize="48" VerticalContentAlignment="Stretch"/>
-        <TextBox x:Name="answer" Text="" TextWrapping="Wrap" Margin="10,20,10,452" FontSize="72" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="operation1" Text="" TextWrapping="Wrap" Margin="10,235,97,268" TextChanged="operation1_TextChanged"/>
-        <TextBox x:Name="operation2" Text="" TextWrapping="Wrap" Margin="10,407,97,96" TextChanged="operation2_TextChanged"/>
+        <Button x:Name="buttEquals" Content="=" Margin="258,493,10,10" Click="Button_Click_4" FontSize="48" VerticalContentAlignment="Stretch"/>
+        <Button x:Name="buttAddition" Content="+" Margin="258,407,10,96" Click="Button_Click_3" FontSize="48" VerticalContentAlignment="Stretch"/>
+        <Button x:Name="buttSubtraction" Content="-" Margin="258,321,10,182" Click="Button_Click_2" FontSize="48" VerticalContentAlignment="Stretch"/>
+        <Button x:Name="buttMultiplication" Content="*" Margin="258,235,10,268" Click="Button_Click_1" FontSize="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom"/>
+        <Button x:Name="buttDivide" Content="/" Margin="258,149,10,354" Click="Button_Click" FontSize="48" VerticalContentAlignment="Stretch"/>
+        <TextBox x:Name="textAnswer" Text="" TextWrapping="Wrap" Margin="10,20,10,452" FontSize="72" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="textOperation1" Text="" TextWrapping="Wrap" Margin="10,235,97,268" TextChanged="operation1_TextChanged"/>
+        <TextBox x:Name="textOperation2" Text="" TextWrapping="Wrap" Margin="10,407,97,96" TextChanged="operation2_TextChanged"/>
 
     </Grid>
 </Window>
