@@ -5,9 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:calculatorGUI"
         mc:Ignorable="d"
-        Title="Calculator" Height="450" Width="300">
+        Title="Calculator" Height="600" Width="300">
     <Grid>
-        <Button Content="Button" Margin="197,330,10,10"/>
+        <Button Content="Button" Margin="208,493,10,10"/>
+        <Button Content="Button" Margin="208,407,10,96"/>
+        <Button Content="Button" Margin="208,321,10,182"/>
+        <Button Content="Button" Margin="208,235,10,268"/>
+        <Button Content="Button" Margin="208,149,10,354"/>
 
     </Grid>
 </Window>
