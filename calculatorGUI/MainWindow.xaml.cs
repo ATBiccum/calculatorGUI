@@ -28,25 +28,39 @@ namespace calculatorGUI
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             //Division
-
+            double num1 = Convert.ToDouble(firstTextBox.Text);
+            double num2 = Convert.ToDouble(secondTextBox.Text);
+            double temp = num1 / num2;
+            textAnswer.Text = Convert.ToString(temp);
+            
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             //Mupliplication
+            double num1 = Convert.ToDouble(firstTextBox.Text);
+            double num2 = Convert.ToDouble(secondTextBox.Text);
+            double temp = num1 * num2;
+            textAnswer.Text = Convert.ToString(temp);
 
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
             //Subtraction
-
+            double num1 = Convert.ToDouble(firstTextBox.Text);
+            double num2 = Convert.ToDouble(secondTextBox.Text);
+            double temp = num1 - num2;
+            textAnswer.Text = Convert.ToString(temp);
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
             //Addition
-
+            double num1 = Convert.ToDouble(firstTextBox.Text);
+            double num2 = Convert.ToDouble(secondTextBox.Text);
+            double temp = num1 + num2;
+            textAnswer.Text = Convert.ToString(temp);
         }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
