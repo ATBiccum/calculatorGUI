@@ -27,25 +27,39 @@ namespace calculatorGUI
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            //Division
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-
+            //Mupliplication
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-
+            //Subtraction
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-
+            //Addition
         }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            //Equals
+        }
+
+        private void operation1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void operation2_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+        private void answer_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
