@@ -7,14 +7,14 @@
         mc:Ignorable="d"
         Title="Calculator" Height="600" Width="350">
     <Grid>
-        <Button x:Name="buttEquals" Content="=" Margin="258,493,10,10" Click="Button_Click_4" FontSize="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Button x:Name="buttEquals" Content="=" Margin="258,493,10,10" FontSize="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
         <Button x:Name="buttAddition" Content="+" Margin="258,407,10,96" Click="Button_Click_3" FontSize="48" VerticalContentAlignment="Center"/>
         <Button x:Name="buttSubtraction" Content="-" Margin="258,321,10,182" Click="Button_Click_2" FontSize="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
         <Button x:Name="buttMultiplication" Content="*" Margin="258,235,10,268" Click="Button_Click_1" FontSize="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
         <Button x:Name="buttDivide" Content="/" Margin="258,149,10,354" Click="Button_Click" FontSize="48" VerticalContentAlignment="Center"/>
         <TextBox x:Name="textAnswer" Text="" TextWrapping="Wrap" Margin="10,20,10,452" FontSize="72" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="firstTextBox" Text="" TextWrapping="Wrap" Margin="10,235,97,268" TextChanged="operation1_TextChanged"/>
-        <TextBox x:Name="secondTextBox" Text="" TextWrapping="Wrap" Margin="10,407,97,96" TextChanged="operation2_TextChanged"/>
+        <TextBox x:Name="firstTextBox" Text="" TextWrapping="Wrap" Margin="10,235,97,268"/>
+        <TextBox x:Name="secondTextBox" Text="" TextWrapping="Wrap" Margin="10,407,97,96"/>
 
     </Grid>
 </Window>
