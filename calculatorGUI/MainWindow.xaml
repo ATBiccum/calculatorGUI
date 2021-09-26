@@ -5,15 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:calculatorGUI"
         mc:Ignorable="d"
-        Title="Calculator" Height="600" Width="350">
-    <Grid>
-        <Button x:Name="buttAddition" Content="+" Margin="258,407,10,96" Click="Button_Click_3" FontSize="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" RenderSize="82, 97"/>
-        <Button x:Name="buttSubtraction" Content="-" Margin="258,321,10,182" Click="Button_Click_2" FontSize="48" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" RenderSize="82, 97"/>
-        <Button x:Name="buttMultiplication" Content="*" Margin="258,235,10,268" Click="Button_Click_1" FontSize="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" RenderSize="82, 97" />
-        <Button x:Name="buttDivide" Content="/" Margin="258,149,10,354" Click="Button_Click" FontSize="48" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" RenderSize="82, 97"/>
-        <TextBox x:Name="textAnswer" Text="" TextWrapping="Wrap" Margin="10,20,10,452" FontSize="72" HorizontalContentAlignment="Right" VerticalContentAlignment="Center"/>
-        <TextBox x:Name="firstTextBox" Text="" TextWrapping="Wrap" Margin="10,235,97,268"/>
-        <TextBox x:Name="secondTextBox" Text="" TextWrapping="Wrap" Margin="10,407,97,96"/>
+        Title="Calculator" Height="600" Width="350" Padding="0">
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120*" />
+            <RowDefinition Height="120*" />
+            <RowDefinition Height="120*" />
+            <RowDefinition Height="120*" />
+            <RowDefinition Height="120*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="233*" />
+            <ColumnDefinition Width="117*" />
+        </Grid.ColumnDefinitions>
+        <Button x:Name="buttAddition" Content="+" Click="Button_Click_3" FontSize="48" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"/>
+        <Button x:Name="buttSubtraction" Content="-" Click="Button_Click_2" FontSize="48" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"/>
+        <Button x:Name="buttMultiplication" Content="*" Click="Button_Click_1" FontSize="48" Grid.Column="2" Grid.Row="3" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" />
+        <Button x:Name="buttDivide" Content="/" Click="Button_Click" FontSize="48" Grid.Column="2" Grid.Row="4" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"/>
+        <TextBox x:Name="textAnswer" Text="" TextWrapping="Wrap" FontSize="72" Grid.ColumnSpan="2" Grid.Row="0" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"/>
+        <TextBox x:Name="firstTextBox" Text="" TextWrapping="Wrap" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" />
+        <TextBox x:Name="secondTextBox" Text="" TextWrapping="Wrap" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" />
 
     </Grid>
 </Window>

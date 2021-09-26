@@ -1,4 +1,6 @@
-﻿using System;
+﻿
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -129,6 +131,11 @@ namespace calculatorGUI
 
             double temp = cleanNum1 + cleanNum2;
             textAnswer.Text = Convert.ToString(temp);
+        }
+
+        private void firstTextBox_Click(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }
