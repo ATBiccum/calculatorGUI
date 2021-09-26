@@ -15,7 +15,8 @@
             <RowDefinition Height="120*" />
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="233*" />
+            <ColumnDefinition Width="117*" />
+            <ColumnDefinition Width="117*" />
             <ColumnDefinition Width="117*" />
         </Grid.ColumnDefinitions>
         
@@ -51,11 +52,36 @@
                 Grid.Row="4" 
                 HorizontalAlignment="Stretch"  
                 VerticalAlignment="Stretch"/>
+        <Button x:Name="buttPower" 
+                Content="^"  
+                FontSize="48" 
+                Grid.Column="0"
+                Grid.Row="1" 
+                HorizontalAlignment="Stretch"  
+                VerticalAlignment="Stretch" 
+                Click="buttPower_Click"/>
+        <Button x:Name="buttSquareRoot" 
+                Content="sq"
+                FontSize="48" 
+                Grid.Column="1"
+                Grid.Row="1" 
+                HorizontalAlignment="Stretch"  
+                VerticalAlignment="Stretch" Click="buttSquareRoot_Click" 
+                />
+        <Button x:Name="buttClear" 
+                Content="Clear"
+                FontSize="48" 
+                Grid.Column="0"
+                Grid.Row="5" 
+                Grid.ColumnSpan="2" 
+                HorizontalAlignment="Stretch"  
+                VerticalAlignment="Stretch" Click="buttClear_Click"
+                />
         <TextBox x:Name="textAnswer"
                  Text=""  
                  TextWrapping="Wrap" 
                  FontSize="72" 
-                 Grid.ColumnSpan="2" 
+                 Grid.ColumnSpan="3" 
                  Grid.Row="0" 
                  HorizontalAlignment="Stretch"  
                  VerticalAlignment="Stretch"/>
@@ -63,6 +89,7 @@
                  Text="" 
                  TextWrapping="Wrap" 
                  Grid.Column="0" Grid.Row="2" 
+                 Grid.ColumnSpan="2"
                  HorizontalAlignment="Stretch" 
                  VerticalAlignment="Stretch" 
                  FontSize="48" 
@@ -72,6 +99,7 @@
                  Text="" 
                  TextWrapping="Wrap" 
                  Grid.Column="0" Grid.Row="3" 
+                 Grid.ColumnSpan="2"
                  HorizontalAlignment="Stretch" 
                  VerticalAlignment="Stretch" 
                  FontSize="48" 

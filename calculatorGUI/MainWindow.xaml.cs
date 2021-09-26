@@ -167,7 +167,76 @@ namespace calculatorGUI
                 textAnswer.Text = Convert.ToString(temp);
             }
         }
+        private void buttPower_Click(object sender, RoutedEventArgs e)
+        {
+            //Power
+            string num1 = firstTextBox.Text;
+            string num2 = secondTextBox.Text;
+            bool errorFlag = false;
 
+            //Checks for valid characters
+            double cleanNum1 = 0;
+            if (!double.TryParse(num1, out cleanNum1))            //Try parse converts string to a double and saves under clean new name
+            {                                                           //If a unvalid character will trigger warning
+                firstTextBox.Clear();
+                textAnswer.Clear();
+                firstTextBox.Text = "Error: Invalid Char";
+                errorFlag = true;
+            }
+
+            double cleanNum2 = 0;
+            if (!double.TryParse(num2, out cleanNum2))           //Will check if unvalid value and return warning
+            {
+                secondTextBox.Clear();
+                textAnswer.Clear();
+                secondTextBox.Text = "Error: Invalid Char";
+                errorFlag = true;
+            }
+
+            if (!errorFlag)
+            {
+                double temp = Math.Pow(cleanNum1, cleanNum2);
+                textAnswer.Text = Convert.ToString(temp);
+            }
+        }        
+        private void buttSquareRoot_Click(object sender, RoutedEventArgs e)
+        {
+            //Square Root
+            string num1 = firstTextBox.Text;
+            string num2 = secondTextBox.Text;
+            bool errorFlag = false;
+
+            //Checks for valid characters
+            double cleanNum1 = 0;
+            if (!double.TryParse(num1, out cleanNum1))            //Try parse converts string to a double and saves under clean new name
+            {                                                           //If a unvalid character will trigger warning
+                firstTextBox.Clear();
+                textAnswer.Clear();
+                firstTextBox.Text = "Error: Invalid Char";
+                errorFlag = true;
+            }
+
+            double cleanNum2 = 0;
+            if (!double.TryParse(num2, out cleanNum2))           //Will check if unvalid value and return warning
+            {
+                secondTextBox.Clear();
+                textAnswer.Clear();
+                secondTextBox.Text = "Error: Invalid Char";
+                errorFlag = true;
+            }
+
+            if (!errorFlag)
+            {
+                double temp = Math.Sqrt(cleanNum1);
+                textAnswer.Text = Convert.ToString(temp);
+            }
+        }        
+        private void buttClear_Click(object sender, RoutedEventArgs e)
+        {
+            firstTextBox.Clear();
+            secondTextBox.Clear();
+            textAnswer.Clear();
+        }
         private void firstTextBox_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             firstTextBox.Clear();
@@ -179,5 +248,7 @@ namespace calculatorGUI
             secondTextBox.Clear();
             textAnswer.Clear();
         }
+
+
     }
 }
