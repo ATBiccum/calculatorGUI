@@ -262,7 +262,15 @@ namespace calculatorGUI
             secondTextBox.Clear();
             textAnswer.Clear();
         }
-
+        
+        //Easter Egg
+        private void textAnswer_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            //Displays the value of pi when double clicking on answer box
+            double pie = Math.PI;
+            textAnswer.Text = Convert.ToString(pie);
+        }
+        
 
     }
 }

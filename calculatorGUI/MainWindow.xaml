@@ -75,7 +75,7 @@
                 Grid.Row="5" 
                 Grid.ColumnSpan="2" 
                 HorizontalAlignment="Stretch"  
-                VerticalAlignment="Stretch" Click="buttClear_Click"
+                VerticalAlignment="Stretch" Click="buttClear_Click" 
                 />
         <TextBox x:Name="textAnswer"
                  Text=""  
@@ -84,7 +84,7 @@
                  Grid.ColumnSpan="3" 
                  Grid.Row="0" 
                  HorizontalAlignment="Stretch"  
-                 VerticalAlignment="Stretch" HorizontalContentAlignment="Right"/>
+                 VerticalAlignment="Stretch" HorizontalContentAlignment="Right" MouseDoubleClick="textAnswer_MouseDoubleClick"/>
         <TextBox x:Name="firstTextBox" 
                  Text="" 
                  TextWrapping="Wrap" 
@@ -104,7 +104,7 @@
                  VerticalAlignment="Stretch" 
                  FontSize="48" 
                  VerticalContentAlignment="Center" 
-                 HorizontalContentAlignment="Center" MouseDoubleClick="secondTextBox_MouseDoubleClick" />
+                 HorizontalContentAlignment="Center" MouseDoubleClick="secondTextBox_MouseDoubleClick"/>
 
     </Grid>
 </Window>
