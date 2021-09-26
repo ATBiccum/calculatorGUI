@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:calculatorGUI"
         mc:Ignorable="d"
         Title="Calculator" Height="600" Width="350" Padding="0">
-    <Grid x:Name="LayoutRoot" Background="White">
+    <Grid x:Name="LayoutRoot" Background ="Gray">
         <Grid.RowDefinitions>
             <RowDefinition Height="120*" />
             <RowDefinition Height="120*" />
@@ -18,13 +18,65 @@
             <ColumnDefinition Width="233*" />
             <ColumnDefinition Width="117*" />
         </Grid.ColumnDefinitions>
-        <Button x:Name="buttAddition" Content="+" Click="Button_Click_3" FontSize="48" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"/>
-        <Button x:Name="buttSubtraction" Content="-" Click="Button_Click_2" FontSize="48" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"/>
-        <Button x:Name="buttMultiplication" Content="*" Click="Button_Click_1" FontSize="48" Grid.Column="2" Grid.Row="3" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" />
-        <Button x:Name="buttDivide" Content="/" Click="Button_Click" FontSize="48" Grid.Column="2" Grid.Row="4" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"/>
-        <TextBox x:Name="textAnswer" Text="" TextWrapping="Wrap" FontSize="72" Grid.ColumnSpan="2" Grid.Row="0" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"/>
-        <TextBox x:Name="firstTextBox" Text="" TextWrapping="Wrap" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" />
-        <TextBox x:Name="secondTextBox" Text="" TextWrapping="Wrap" Grid.Column="0" Grid.Row="3" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch" />
+        
+        <Button x:Name="buttAddition" 
+                Content="+" 
+                Click="buttAddition_Click" 
+                FontSize="48" 
+                Grid.Column="2"
+                Grid.Row="1" 
+                HorizontalAlignment="Stretch"  
+                VerticalAlignment="Stretch"/>
+        <Button x:Name="buttSubtraction" 
+                Content="-" 
+                Click="buttSubtraction_Click" 
+                FontSize="48" 
+                Grid.Column="2" 
+                Grid.Row="2" 
+                HorizontalAlignment="Stretch"  
+                VerticalAlignment="Stretch"/>
+        <Button x:Name="buttMultiplication" 
+                Content="*" 
+                Click="buttMultiplication_Click" 
+                FontSize="48" 
+                Grid.Column="2" 
+                Grid.Row="3" 
+                HorizontalAlignment="Stretch" 
+                VerticalAlignment="Stretch" />
+        <Button x:Name="buttDivide" 
+                Content="/" 
+                Click="buttDivide_Click" 
+                FontSize="48" 
+                Grid.Column="2"
+                Grid.Row="4" 
+                HorizontalAlignment="Stretch"  
+                VerticalAlignment="Stretch"/>
+        <TextBox x:Name="textAnswer"
+                 Text=""  
+                 TextWrapping="Wrap" 
+                 FontSize="72" 
+                 Grid.ColumnSpan="2" 
+                 Grid.Row="0" 
+                 HorizontalAlignment="Stretch"  
+                 VerticalAlignment="Stretch"/>
+        <TextBox x:Name="firstTextBox" 
+                 Text="" 
+                 TextWrapping="Wrap" 
+                 Grid.Column="0" Grid.Row="2" 
+                 HorizontalAlignment="Stretch" 
+                 VerticalAlignment="Stretch" 
+                 FontSize="48" 
+                 HorizontalContentAlignment="Center" 
+                 VerticalContentAlignment="Center" MouseDoubleClick="firstTextBox_MouseDoubleClick" />
+        <TextBox x:Name="secondTextBox" 
+                 Text="" 
+                 TextWrapping="Wrap" 
+                 Grid.Column="0" Grid.Row="3" 
+                 HorizontalAlignment="Stretch" 
+                 VerticalAlignment="Stretch" 
+                 FontSize="48" 
+                 VerticalContentAlignment="Center" 
+                 HorizontalContentAlignment="Center" MouseDoubleClick="secondTextBox_MouseDoubleClick" />
 
     </Grid>
 </Window>
