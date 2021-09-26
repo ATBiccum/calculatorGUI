@@ -237,6 +237,7 @@ namespace calculatorGUI
 
             if (!errorFlag)                                       //If errorflag was NOT triggered in debug section perform math
             {
+                secondTextBox.Clear();
                 double temp = Math.Sqrt(cleanNum1);               //Square root of cleanNum1
                 textAnswer.Text = Convert.ToString(temp);         //Print the answer in answer text box
             }

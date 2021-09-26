@@ -84,7 +84,7 @@
                  Grid.ColumnSpan="3" 
                  Grid.Row="0" 
                  HorizontalAlignment="Stretch"  
-                 VerticalAlignment="Stretch"/>
+                 VerticalAlignment="Stretch" HorizontalContentAlignment="Right"/>
         <TextBox x:Name="firstTextBox" 
                  Text="" 
                  TextWrapping="Wrap" 
